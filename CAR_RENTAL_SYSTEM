@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <iostream>
+#include <math.h>
+#include <string>
+
+int main() 
+{
+  int bumber = 120; 
+  int spoiler = 120; 
+  int leds = 150; 
+  int V12_engine = 1200000; 
+
+  float price; 
+  int options;
+  
+
+    printf("\n Welcome to my car rental system"); 
+
+    do { 
+        printf("\n Please choose what you want ");
+        printf("Bumber 120 %d", &bumber); 
+        printf("Spoiler 120 %d", &spoiler); 
+        printf("led 150 %d", &leds);
+        printf("V12 Engine 1200000 %d", &V12_engine);
+        scanf("%d", options); 
+        options = bumber + spoiler + leds + V12_engine; 
+        price = options;
+
+    };
+
+    if(!options) 
+    {
+        std::cout << "An Error happened"; 
+        exit(0); 
+    }
+   
+   while(price) 
+   {
+    printf("Thank you for your purchase");
+    exit(0);¨
+    return EXIT_SUCCESS;
+   }
+   
+}
